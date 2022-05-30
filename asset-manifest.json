@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Signup_Login_Pages/static/css/main.55a7bd13.css",
+    "main.js": "/Signup_Login_Pages/static/js/main.3c49a953.js",
+    "static/media/background-white.jpg": "/Signup_Login_Pages/static/media/background-white.d15462ae73c5e2bb34f0.jpg",
+    "static/media/img-2.svg": "/Signup_Login_Pages/static/media/img-2.b00d6c1916cd039c52513d520eb974db.svg",
+    "static/media/success.png": "/Signup_Login_Pages/static/media/success.db38601f398bab86d39d.png",
+    "index.html": "/Signup_Login_Pages/index.html",
+    "main.55a7bd13.css.map": "/Signup_Login_Pages/static/css/main.55a7bd13.css.map",
+    "main.3c49a953.js.map": "/Signup_Login_Pages/static/js/main.3c49a953.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55a7bd13.css",
+    "static/js/main.3c49a953.js"
+  ]
+}
