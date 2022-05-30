@@ -12,5 +12,5 @@
   position: absolute;
   width:100%;
   height:100%;
-  background-image: url('../public/img/background-white.jpg');
+  background-image: url('./img/background-white.jpg');
 }
