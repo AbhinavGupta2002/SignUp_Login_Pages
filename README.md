@@ -3,7 +3,7 @@ Signup and login pages built using Javascript with React.
 
 Check out the project here: https://abhinavgupta2002.github.io/Signup_Login_Pages/
 
-NOTE: Project is only supported for Google Chrome Browser!
+NOTE: Project is only supported for Google Chrome browser!
 
 
 Tasks completed:
