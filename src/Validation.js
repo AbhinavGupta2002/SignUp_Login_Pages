@@ -62,7 +62,7 @@ export default function validation(values) {
                     throw('ERROR: username is taken!')
                 }
             }
-            errors.username = 'TAKEN HERE'
+            //errors.username = 'TAKEN HERE'
         } catch (error) {
             console.log(error)
         }
