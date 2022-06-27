@@ -51,3 +51,14 @@ app.get('/all-usernames', async (req, res) => {
         throw(err);
     }
 });
+
+// Retrieve all account usernames and passwords from database
+app.get('/all-login-credentials', async (req, res) => {
+    try {
+        const accounts = await Account.find({}, {username:1, password:1, _id:0});
+        res.send(accounts);
+    } catch (err) {
+        err.statusCode = 400; // retrieving all tasks of a document from database was unsuccessful
+        throw(err);
+    }
+});

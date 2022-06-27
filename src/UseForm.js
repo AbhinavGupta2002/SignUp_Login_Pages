@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import validation from "./Validation";
+import {useLocation} from 'react-router-dom'
 
 const useForm = (callback, validation) => {
+    const location = useLocation()
     const [values, setValues] = useState({
         username: '',
         email: '',
@@ -20,7 +21,7 @@ const useForm = (callback, validation) => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        setErrors(validation(values))
+        setErrors(validation(values, location.pathname))
         setIsSubmitting(true)
     }
 

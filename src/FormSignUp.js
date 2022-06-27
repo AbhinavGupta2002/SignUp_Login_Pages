@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import useForm from './UseForm';
 import validation from './Validation';
-import './Form.css'
+import {Link} from 'react-router-dom';
+import './Form.css';
 
 // capitlaize first letter of every word in a string
 const capitalize = (s) => {
@@ -16,7 +17,7 @@ const inputType = (inputName, values, buttonText, buttonText1) => {
 
 const inputError = (inputName, errors) => {
     return (inputName == 'email' ? errors.email && <p>{errors.email}</p> :
-            inputName == 'username' ? errors.username && <p className='testpara'>{errors.username}</p> : 
+            inputName == 'username' ? errors.username && <p>{errors.username}</p> : 
             inputName == 'password' ? errors.password && <p>{errors.password}</p> :
             errors.confirm_password && <p>{errors.confirm_password}</p>)
 }
@@ -36,7 +37,7 @@ const inputBar = (inputName, handleChange, values, errors, buttonText, buttonTex
 }
 
 const FormSignUp = ({submitForm}) => {
-
+    document.title = "Signup Form"
     const {handleChange, values, handleSubmit, errors} = useForm(submitForm, validation)
     const [buttonText, setButtonText] = useState('SHOW')
     const [buttonText1, setButtonText1] = useState('SHOW')
@@ -66,7 +67,7 @@ const FormSignUp = ({submitForm}) => {
                 {buttonText1}
             </button>
             <button className='form-input-btn' type='submit'>Sign Up</button>
-            <span className='form-input-login'>Already Have An Account? <a href='#'>Login</a></span>
+            <span className='form-input-login'>Already Have An Account? <Link to='/Signup_Login_Pages/login'>Login</Link></span>
         </form>
       </div>
   )
